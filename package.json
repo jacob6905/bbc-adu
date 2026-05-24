@@ -1,0 +1,11 @@
+{
+  "name": "bbc-adu",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler pages deploy public --project-name bbc-adu --branch main"
+  },
+  "devDependencies": {
+    "wrangler": "^4.85.0"
+  }
+}
