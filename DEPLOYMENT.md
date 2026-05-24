@@ -2,10 +2,11 @@
 
 ## Current Cloudflare Pages Site
 
-- Project: `bbc-adu`
-- Live preview: `https://27ace8e9.bbc-adu.pages.dev`
+- Project: `bbcadu`
+- Live site: `https://bbcadu.pages.dev`
 - Production branch: `main`
 - Publish directory: `public`
+- GitHub repo: `https://github.com/jacob6905/bbc-adu`
 
 ## Custom Domain
 
@@ -20,21 +21,20 @@ In SpaceShip DNS, add or update:
 
 | Host | Type | Value |
 | --- | --- | --- |
-| `@` | `CNAME` or `ALIAS/ANAME` | `bbc-adu.pages.dev` |
-| `www` | `CNAME` | `bbc-adu.pages.dev` |
+| `@` | `CNAME` or `ALIAS/ANAME` | `bbcadu.pages.dev` |
+| `www` | `CNAME` | `bbcadu.pages.dev` |
 
 If SpaceShip does not allow `CNAME` at `@`, use its `ALIAS`, `ANAME`, or flattened CNAME option for the root domain. If that is not available, connect the domain by changing nameservers/DNS hosting to Cloudflare.
 
 ## GitHub Setup
 
-Create an empty GitHub repo named `bbc-adu` under `jacob6905`, then run:
+GitHub is connected as the source repo:
 
-```powershell
-git remote add origin https://github.com/jacob6905/bbc-adu.git
-git push -u origin main
-```
+- Repo: `jacob6905/bbc-adu`
+- Branch: `main`
+- Cloudflare Pages project: `bbcadu`
 
-After that, connect the GitHub repo in Cloudflare Pages:
+Cloudflare Pages build settings:
 
 - Framework preset: None
 - Build command: empty

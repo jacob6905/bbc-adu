@@ -11,14 +11,14 @@ Static landing page for BBC ADU, a local ADU-focused construction company establ
 
 ## Deployment
 
-Cloudflare Pages project: `bbc-adu`
+Cloudflare Pages project: `bbcadu`
 
 Current production publish directory: `public`
 
 Manual deploy command:
 
 ```powershell
-npx.cmd wrangler pages deploy public --project-name bbc-adu --branch main
+npx.cmd wrangler pages deploy public --project-name bbcadu --branch main
 ```
 
 When updating the main site, copy the changed production files into `public/` before deploying.
